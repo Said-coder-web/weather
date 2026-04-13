@@ -239,18 +239,18 @@ function slices(arr) {
 }
 
 function getIcon(code, night) {
-  if (code === 0 && night === false) return `../assets/images/icon-sunny.webp`;
-  if (code === 0 && night === true) return `../assets/images/night-moon.PNG`;
+  if (code === 0 && night === false) return `assets/images/icon-sunny.webp`;
+  if (code === 0 && night === true) return `assets/images/night-moon.PNG`;
   if (code <= 3 && night === false)
-    return `../assets/images/icon-partly-cloudy.webp`;
-  if (code <= 3 && night === true) return `../assets/images/crescent-moon.PNG`;
-  if (code === 45 || code === 48) return `../assets/images/icon-fog.webp`;
-  if (code <= 55) return `../assets/images/icon-drizzle.webp`;
-  if (code <= 65) return `../assets/images/icon-rain.webp`;
-  if (code <= 75) return `../assets/images/icon-snow.webp`;
-  if (code <= 95) return `../assets/images/icon-storm.webp`;
+    return `assets/images/icon-partly-cloudy.webp`;
+  if (code <= 3 && night === true) return `assets/images/crescent-moon.PNG`;
+  if (code === 45 || code === 48) return `assets/images/icon-fog.webp`;
+  if (code <= 55) return `assets/images/icon-drizzle.webp`;
+  if (code <= 65) return `assets/images/icon-rain.webp`;
+  if (code <= 75) return `assets/images/icon-snow.webp`;
+  if (code <= 95) return `assets/images/icon-storm.webp`;
 
-  return `../assets/images/icon-overcast.webp`;
+  return `assets/images/icon-overcast.webp`;
 }
 
 function activLi() {
