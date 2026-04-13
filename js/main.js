@@ -100,7 +100,7 @@ function searchCity() {
 }
 
 function cities() {
-  fetch("../egypt.json")
+  fetch("egypt.json")
     .then((cont) => cont.json())
     .then((cont) => {
       listContry.innerHTML = "";
