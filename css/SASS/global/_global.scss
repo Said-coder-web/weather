@@ -1,0 +1,60 @@
+@use "../layout/varibals" as *;
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans", sans-serif;
+  // font-size: 18px;
+}
+
+body {
+  background: $bodyColor;
+  color: $white;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $hoverItem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding-inline: 50px;
+  margin-inline: auto;
+
+  @media (max-width: 767px) {
+    padding-inline: 15px;
+    width: 100%;
+  }
+  @media (min-width: 768px) {
+    padding-inline: 20px;
+    width: 750px;
+  }
+  @media (min-width: 990px) {
+    padding-inline: 30px;
+    width: 950px;
+  }
+  @media (min-width: 1200px) {
+    padding-inline: 50px;
+    width: 1100px;
+  }
+}

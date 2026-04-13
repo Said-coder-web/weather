@@ -1,0 +1,362 @@
+doctype
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    include includes/links.pug
+    title Frontend Mentor | Weather app
+  body
+    header
+      .container
+        .logo
+          img(src="assets/images/logo.svg", alt="Weather App Logo")
+        .units
+          img(src="assets/images/icon-units.svg" alt="icon")
+          |Units
+          img(src="assets/images/icon-dropdown.svg" alt="icon")
+
+          .info__units
+            button Switch to Imperial
+            .unit
+              h4 Temperature
+              button.active Celsius (°C)
+              button Fahrenheit (°F)
+            .unit
+              h4 Wind Speed
+              button.active km/h
+              button mph
+            .unit
+              h4 Precipitation
+              button.active Millimeters (mm)
+              button Inches (in)
+
+    .home
+      .container
+        h2.home__title How's the sky looking today?
+
+        .input
+          img(src="assets/images/icon-search.svg")
+          input(type="search", name="country", autocomplete="off", placeholder="Search for a place..." )
+          button.submit Search
+          ul.list__contry
+
+
+
+        .loading
+          .left
+            .wither
+              <div class="loading">
+                <span></span>
+                <span></span>
+                <span></span>
+                </div>
+              <h3>Loading...</h3>
+
+            .wither__info
+              .box
+                h4 Feels like
+                span _
+
+              .box
+                h4 Humidity
+                span _
+
+              .box
+                h4 Wind
+                span _
+
+              .box
+                h4 Precipitation
+                span _
+
+            .daily
+              h3 Daily forecast
+              .daily__cards
+                .card
+
+
+                .card
+
+
+                .card
+
+
+                .card
+
+
+                .card
+
+
+                .card
+
+
+                .card
+
+
+          .right
+            .hourly__title
+              h4 Hourly forecast
+              button 
+                |-
+                img(src="assets/images/icon-dropdown.svg", alt="image")
+
+            ul.hourly__info
+              li 
+
+
+              li 
+
+
+              li 
+
+
+              li 
+
+
+              li 
+
+
+              li
+
+
+              li 
+
+
+              li 
+
+
+
+
+        .content
+          .left
+            .wither
+              img(src="assets/images/bg-today-large.svg", alt="image")
+              .country
+                h3 
+                p 
+              img(class="wither__icon" src="", alt="image")
+              .degree__c
+              span.degree 
+            .wither__info
+              .box
+                h4 Feels like
+                span 
+                  sup 
+
+              .box
+                h4 Humidity
+                span 
+                  span 
+
+              .box
+                h4 Wind
+                span 
+                  span 
+
+              .box
+                h4 Precipitation
+                span 
+                  span 
+
+            .daily
+              h3 Daily forecast
+              .daily__cards
+                .card
+                  h4 
+                  img(src="", alt="image")
+                  .spans
+                    span 
+                    span 
+
+                .card
+                  h4 
+                  img(src="", alt="image")
+                  .spans
+                    span 
+                    span 
+
+                .card
+                  h4 
+                  img(src="", alt="imge")
+                  .spans
+                    span 
+                    span 
+
+                .card
+                  h4 
+                  img(src="", alt="imge")
+                  .spans
+                    span 
+                    span 
+
+                .card
+                  h4 
+                  img(src="", alt="image")
+                  .spans
+                    span 
+                    span 
+
+                .card
+                  h4 
+                  img(src="", alt="image")
+                  .spans
+                    span 
+                    span 
+
+                .card
+                  h4 
+                  img(src="", alt="image")
+                  .spans
+                    span 
+                    span 
+
+          .right
+            .hourly__title
+              h4 Hourly forecast
+              button 
+                span Tuesday
+                img(src="assets/images/icon-dropdown.svg", alt="image")
+                ul.days
+                  li 
+                  li.active 
+                  li 
+                  li 
+                  li 
+                  li 
+                  li
+            ul.hourly__info
+              li 
+                img(src="", alt="image")
+                span.hour 
+                span.celsius 
+
+              li 
+                img(src="", alt="image")
+                span.hour 
+                span.celsius 
+
+              li 
+                img(src="", alt="image")
+                span.hour 
+                span.celsius 
+
+              li 
+                img(src="", alt="image")
+                span.hour  
+                span.celsius 
+
+              li 
+                img(src="", alt="image")
+                span.hour  
+                span.celsius 
+
+              li
+                img(src="", alt="image")
+                span.hour  
+                span.celsius 
+
+              li 
+                img(src="", alt="image")
+                span.hour  
+                span.celsius 
+
+              li 
+                img(src="", alt="image")
+                span.hour  
+                span.celsius 
+
+              li 
+                img(src="", alt="image")
+                span.hour  
+                span.celsius 
+
+              li 
+                img(src="", alt="image")
+                span.hour
+                span.celsius 
+
+              li 
+                img(src="", alt="image")
+                span.hour
+                span.celsius 
+
+              li 
+                img(src="", alt="image")
+                span.hour
+                span.celsius 
+
+              li 
+                img(src="", alt="image")
+                span.hour  
+                span.celsius 
+
+              li
+                img(src="", alt="image")
+                span.hour  
+                span.celsius 
+
+              li 
+                img(src="", alt="image")
+                span.hour
+                span.celsius 
+
+              li 
+                img(src="", alt="image")
+                span.hour  
+                span.celsius 
+
+              li 
+                img(src="", alt="image")
+                span.hour 
+                span.celsius 
+
+              li 
+                img(src="", alt="image")
+                span.hour 
+                span.celsius 
+
+              li 
+                img(src="", alt="image")
+                span.hour 
+                span.celsius 
+
+              li 
+                img(src="", alt="image")
+                span.hour 
+                span.celsius 
+
+              li 
+                img(src="", alt="image")
+                span.hour  
+                span.celsius 
+
+              li
+                img(src="", alt="image")
+                span.hour 
+                span.celsius 
+
+              li 
+                img(src="", alt="image")
+                span.hour 
+                span.celsius 
+
+              li 
+                img(src="", alt="image")
+                span.hour 
+                span.celsius 
+
+
+
+
+        .not-found
+          span !
+          p No Search Result Found
+
+    script(src="js/main.js")
+
+
+
+
+
+
+

@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;display=swap"
+      rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&amp;display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Frontend Mentor | Weather app</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo"><img src="assets/images/logo.svg" alt="image" /></div>
+        <div class="units">
+          <img src="assets/images/icon-units.svg" alt="icon" />Units<img
+            src="assets/images/icon-dropdown.svg"
+            alt="icon" />
+          <div class="info__units">
+            <button>Switch to Imperial</button>
+            <div class="unit">
+              <h4>Temperature</h4>
+              <button class="active">Celsius (°C)</button>
+              <button>Fahrenheit (°F)</button>
+            </div>
+            <div class="unit">
+              <h4>Wind Speed</h4>
+              <button class="active">km/h</button>
+              <button>mph</button>
+            </div>
+            <div class="unit">
+              <h4>Precipitation</h4>
+              <button class="active">Millimeters (mm)</button>
+              <button>Inches (in)</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="home">
+      <div class="container">
+        <h2 class="home__title">How's the sky looking today?</h2>
+        <div class="input">
+          <img src="assets/images/icon-search.svg" />
+          <input
+            type="search"
+            name="country"
+            autocomplete="off"
+            placeholder="Search for a place..." />
+          <button class="submit">Search</button>
+          <ul class="list__contry"></ul>
+        </div>
+        <div class="loading">
+          <div class="left">
+            <div class="wither">
+              <div class="loading">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <h3>Loading...</h3>
+            </div>
+            <div class="wither__info">
+              <div class="box">
+                <h4>Feels like</h4>
+                <span>_</span>
+              </div>
+              <div class="box">
+                <h4>Humidity</h4>
+                <span>_</span>
+              </div>
+              <div class="box">
+                <h4>Wind</h4>
+                <span>_</span>
+              </div>
+              <div class="box">
+                <h4>Precipitation</h4>
+                <span>_</span>
+              </div>
+            </div>
+            <div class="daily">
+              <h3>Daily forecast</h3>
+              <div class="daily__cards">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <div class="hourly__title">
+              <h4>Hourly forecast</h4>
+              <button>
+                -<img src="assets/images/icon-dropdown.svg" alt="image" />
+              </button>
+            </div>
+            <ul class="hourly__info">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+        <div class="content">
+          <div class="left">
+            <div class="wither">
+              <img src="assets/images/bg-today-large.svg" alt="image" />
+              <div class="country">
+                <h3></h3>
+                <p></p>
+              </div>
+              <img class="wither__icon" src="" alt="image" />
+              <div class="degree__c"></div>
+              <span class="degree"> </span>
+            </div>
+            <div class="wither__info">
+              <div class="box">
+                <h4>Feels like</h4>
+                <span> <sup> </sup></span>
+              </div>
+              <div class="box">
+                <h4>Humidity</h4>
+                <span> <span> </span></span>
+              </div>
+              <div class="box">
+                <h4>Wind</h4>
+                <span> <span> </span></span>
+              </div>
+              <div class="box">
+                <h4>Precipitation</h4>
+                <span> <span> </span></span>
+              </div>
+            </div>
+            <div class="daily">
+              <h3>Daily forecast</h3>
+              <div class="daily__cards">
+                <div class="card">
+                  <h4></h4>
+                  <img src="" alt="image" />
+                  <div class="spans"><span> </span><span> </span></div>
+                </div>
+                <div class="card">
+                  <h4></h4>
+                  <img src="" alt="image" />
+                  <div class="spans"><span> </span><span> </span></div>
+                </div>
+                <div class="card">
+                  <h4></h4>
+                  <img src="" alt="imge" />
+                  <div class="spans"><span> </span><span> </span></div>
+                </div>
+                <div class="card">
+                  <h4></h4>
+                  <img src="" alt="imge" />
+                  <div class="spans"><span> </span><span> </span></div>
+                </div>
+                <div class="card">
+                  <h4></h4>
+                  <img src="" alt="image" />
+                  <div class="spans"><span> </span><span> </span></div>
+                </div>
+                <div class="card">
+                  <h4></h4>
+                  <img src="" alt="image" />
+                  <div class="spans"><span> </span><span> </span></div>
+                </div>
+                <div class="card">
+                  <h4></h4>
+                  <img src="" alt="image" />
+                  <div class="spans"><span> </span><span> </span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <div class="hourly__title">
+              <h4>Hourly forecast</h4>
+              <button>
+                <span>Tuesday</span
+                ><img src="assets/images/icon-dropdown.svg" alt="image" />
+                <ul class="days">
+                  <li></li>
+                  <li class="active"></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </button>
+            </div>
+            <ul class="hourly__info">
+              <li>
+                <img scr="" alt="image" /><span class="hour"> </span
+                ><span class="celsius"> </span>
+              </li>
+              <li>
+                <img scr="" alt="image" /><span class="hour"> </span
+                ><span class="celsius"> </span>
+              </li>
+              <li>
+                <img scr="" alt="image" /><span class="hour"> </span
+                ><span class="celsius"> </span>
+              </li>
+              <li>
+                <img scr="" alt="image" /><span class="hour"> </span
+                ><span class="celsius"> </span>
+              </li>
+              <li>
+                <img scr="" alt="image" /><span class="hour"> </span
+                ><span class="celsius"> </span>
+              </li>
+              <li>
+                <img scr="" alt="image" /><span class="hour"> </span
+                ><span class="celsius"> </span>
+              </li>
+              <li>
+                <img scr="" alt="image" /><span class="hour"> </span
+                ><span class="celsius"> </span>
+              </li>
+              <li>
+                <img scr="" alt="image" /><span class="hour"> </span
+                ><span class="celsius"> </span>
+              </li>
+              <li>
+                <img scr="" alt="image" /><span class="hour"> </span
+                ><span class="celsius"> </span>
+              </li>
+              <li>
+                <img scr="" alt="image" /><span class="hour"></span
+                ><span class="celsius"> </span>
+              </li>
+              <li>
+                <img scr="" alt="image" /><span class="hour"></span
+                ><span class="celsius"> </span>
+              </li>
+              <li>
+                <img scr="" alt="image" /><span class="hour"></span
+                ><span class="celsius"> </span>
+              </li>
+              <li>
+                <img scr="" alt="image" /><span class="hour"> </span
+                ><span class="celsius"> </span>
+              </li>
+              <li>
+                <img scr="" alt="image" /><span class="hour"> </span
+                ><span class="celsius"> </span>
+              </li>
+              <li>
+                <img scr="" alt="image" /><span class="hour"></span
+                ><span class="celsius"> </span>
+              </li>
+              <li>
+                <img scr="" alt="image" /><span class="hour"> </span
+                ><span class="celsius"> </span>
+              </li>
+              <li>
+                <img scr="" alt="image" /><span class="hour"> </span
+                ><span class="celsius"> </span>
+              </li>
+              <li>
+                <img scr="" alt="image" /><span class="hour"> </span
+                ><span class="celsius"> </span>
+              </li>
+              <li>
+                <img scr="" alt="image" /><span class="hour"> </span
+                ><span class="celsius"> </span>
+              </li>
+              <li>
+                <img scr="" alt="image" /><span class="hour"> </span
+                ><span class="celsius"> </span>
+              </li>
+              <li>
+                <img scr="" alt="image" /><span class="hour"> </span
+                ><span class="celsius"> </span>
+              </li>
+              <li>
+                <img scr="" alt="image" /><span class="hour"> </span
+                ><span class="celsius"> </span>
+              </li>
+              <li>
+                <img scr="" alt="image" /><span class="hour"> </span
+                ><span class="celsius"> </span>
+              </li>
+              <li>
+                <img scr="" alt="image" /><span class="hour"> </span
+                ><span class="celsius"> </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="not-found">
+          <span>!</span>
+          <p>No Search Result Found</p>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

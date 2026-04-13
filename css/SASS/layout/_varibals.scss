@@ -1,0 +1,14 @@
+$bodyColor: hsl(243, 96%, 9%);
+$itemColor: hsl(243, 27%, 20%);
+$white: white;
+$grey: hsl(240, 6%, 70%);
+$hoverItem: hsl(243, 23%, 30%);
+
+$blue: hsl(233, 67%, 56%);
+$blueHover: hsl(248, 70%, 36%);
+
+%button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
